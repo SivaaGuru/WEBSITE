@@ -102,33 +102,46 @@
 // console.log(message)
 
 
-let day = 8;
+// let day = 8;
 
-switch(day){
-    case 1:
-        console.log("it is monday");
-        break;
-    case 2:
-        console.log("it is tuesday");
-        break;
-    case 3:
-        console.log("it is wednesday");
-        break;
-     case 4:
-        console.log("it is thursday");
-        break;
-     case 5:
-        console.log("it is friday");
-        break;
-     case 6:
-        console.log("it is saturday");
-        break;
-     case 7:
-        console.log("it is sunday");
-        break;
-     default:
-        console.log(`${day} is not a day`);       
-    }    
+// switch(day){
+//     case 1:
+//         console.log("it is monday");
+//         break;
+//     case 2:
+//         console.log("it is tuesday");
+//         break;
+//     case 3:
+//         console.log("it is wednesday");
+//         break;
+//      case 4:
+//         console.log("it is thursday");
+//         break;
+//      case 5:
+//         console.log("it is friday");
+//         break;
+//      case 6:
+//         console.log("it is saturday");
+//         break;
+//      case 7:
+//         console.log("it is sunday");
+//         break;
+//      default:
+//         console.log(`${day} is not a day`);       
+//     }    
+
+
+
+
+const fullname ="Sivaa Guru";
+let firstname = fullname.slice(0, 3);
+let lastname = fullname.slice(4, 8);
+
+let firstchar = fullname.slice(0,1);
+let lastchar = fullname.slice(-1);
+
+console.log(firstname);
+console.log(lastname);
 
 
 
