@@ -67,36 +67,68 @@
 //     }
 
 
-const mycheckbox = document.getElementById("mycheckbox");
-const visaBtn = document.getElementById("visaBtn");
-const mastercardBtn = document.getElementById("mastercardBtn");
-const paypalBtn = document.getElementById("paypalBtn");
-const mysubmit = document.getElementById("mysubmit");
-const subResult = document.getElementById("subResult");
-const paymentResult = document.getElementById("paymnetResult");
+// const mycheckbox = document.getElementById("mycheckbox");
+// const visaBtn = document.getElementById("visaBtn");
+// const mastercardBtn = document.getElementById("mastercardBtn");
+// const paypalBtn = document.getElementById("paypalBtn");
+// const mysubmit = document.getElementById("mysubmit");
+// const subResult = document.getElementById("subResult");
+// const paymentResult = document.getElementById("paymnetResult");
 
-mysubmit.onclick = function(){
+// mysubmit.onclick = function(){
 
-    if(mycheckbox.checked){
-        subResult.textContent = `You are subscribed`;
-    }
-    else{
-        subResult.textContent = `you are not subscribed`;
-    }
-    if(visaBtn.checked){
-        paymentResult.textContent = `You are paying with Visa`;
-    }
-    else if(mastercardBtn.checked){
-        paymentResult.textContent = `you are pauing with mastercard`;
-    }
-    else if(paypalBtnBtn.checked){
-        paymentResult.textContent = `you are paying with paypal`;
-    }
-    else{
-        paymentResult.textContent = `You must select a payment type`;
-    }
-}   
+//     if(mycheckbox.checked){
+//         subResult.textContent = `You are subscribed`;
+//     }
+//     else{
+//         subResult.textContent = `you are not subscribed`;
+//     }
+//     if(visaBtn.checked){
+//         paymentResult.textContent = `You are paying with Visa`;
+//     }
+//     else if(mastercardBtn.checked){
+//         paymentResult.textContent = `you are pauing with mastercard`;
+//     }
+//     else if(paypalBtnBtn.checked){
+//         paymentResult.textContent = `you are paying with paypal`;
+//     }
+//     else{
+//         paymentResult.textContent = `You must select a payment type`;
+//     }
+// }   
 
+// let age = 12;
+// let message = age >=18 ? "youre an adult" : "youre a minor";
+// console.log(message)
+
+
+let day = 8;
+
+switch(day){
+    case 1:
+        console.log("it is monday");
+        break;
+    case 2:
+        console.log("it is tuesday");
+        break;
+    case 3:
+        console.log("it is wednesday");
+        break;
+     case 4:
+        console.log("it is thursday");
+        break;
+     case 5:
+        console.log("it is friday");
+        break;
+     case 6:
+        console.log("it is saturday");
+        break;
+     case 7:
+        console.log("it is sunday");
+        break;
+     default:
+        console.log(`${day} is not a day`);       
+    }    
 
 
 
