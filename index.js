@@ -144,7 +144,7 @@
 // console.log(lastname);
 
 
-let username = window.prompt("Enter your username: ");
+// let username = window.prompt("Enter your username: ");
 
 
 // username=username.trim();
@@ -186,14 +186,45 @@ let username = window.prompt("Enter your username: ");
 
 
 
-const fullName = "Sivaa Guru";
+// const fullName = "Sivaa Guru";
 
-let firstName = fullName.slice(0, 3);
-let lastname = fullName.slice(3, 8);
+// let firstName = fullName.slice(0, 3);
+// let lastname = fullName.slice(3, 8);
 
 
-console.log(firstName);
-console.log(lastname);
+// console.log(firstName);
+// console.log(lastname);
+
+
+
+let loggedIn = false;
+let username;
+let password;
+
+while(!loggedIn){
+    username = window.prompt("Enter your username");
+    password = window.prompt("Enter your password")
+    
+    if (username === "myusername" && password === "mypassword"){
+        loggedIn = true;
+        console.log("You are logged in!");
+    }
+    else{
+
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
