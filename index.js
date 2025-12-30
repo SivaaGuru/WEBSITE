@@ -278,25 +278,47 @@
 
 
 
-let x = 3;
+// let x = 3;
 
-function2();
+// function2();
 
-function function1(){
-    let x = 1;
-    console.log(x);
+// function function1(){
+//     let x = 1;
+//     console.log(x);
+// }
+
+// function function2(){
+//     let x = 2;
+//     console.log(x);
+// }
+
+
+
+const textBox = document.getElementById("textBox");
+const toFahrenheit = document.getElementById("toFahrenheit");
+const tocelsius = document.getElementById("tocelsius");
+const result = document.getElementById("result");
+let temp;
+
+function convert(){
+
+    if(toFahrenheit.checked){
+        temp = Number(textBox.value)
+        temp = temp * 9 / 5 + 32;
+        result.textContent = temp.toFixed + "°F";
+
+       
+    }   
+    else if(tocelsius.checked){
+         temp = Number(textBox.value)
+        temp = temp - 32 * (5/9);
+        result.textContent = temp.toFixed + "°C";
+        
+    }
+    else{
+        result.textContent = "Select a unit";
+    }
 }
-
-function function2(){
-    let x = 2;
-    console.log(x);
-}
- 
-
-
-
-
-
 
 
 
