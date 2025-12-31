@@ -294,31 +294,134 @@
 
 
 
-const textBox = document.getElementById("textBox");
-const toFahrenheit = document.getElementById("toFahrenheit");
-const tocelsius = document.getElementById("tocelsius");
-const result = document.getElementById("result");
-let temp;
+// const textBox = document.getElementById("textBox");
+// const toFahrenheit = document.getElementById("toFahrenheit");
+// const tocelsius = document.getElementById("tocelsius");
+// const result = document.getElementById("result");
+// let temp;
 
-function convert(){
+// function convert(){
 
-    if(toFahrenheit.checked){
-        temp = Number(textBox.value)
-        temp = temp * 9 / 5 + 32;
-        result.textContent = temp.toFixed + "°F";
+//     if(toFahrenheit.checked){
+//         temp = Number(textBox.value)
+//         temp = temp * 9 / 5 + 32;
+//         result.textContent = temp.toFixed + "°F";
 
        
-    }   
-    else if(tocelsius.checked){
-         temp = Number(textBox.value)
-        temp = temp - 32 * (5/9);
-        result.textContent = temp.toFixed + "°C";
+//     }   
+//     else if(tocelsius.checked){
+//          temp = Number(textBox.value)
+//         temp = temp - 32 * (5/9);
+//         result.textContent = temp.toFixed + "°C";
         
-    }
-    else{
-        result.textContent = "Select a unit";
-    }
+//     }
+//     else{
+//         result.textContent = "Select a unit";
+//     }
+// }
+
+
+
+// let fruits = ("apple","banana","coconut","orange");
+
+// console.log(fruits);
+
+
+
+// function openFridge(...foods){
+//     console.log(foods);
+// }
+
+// const food1 = "pizza";
+// const food2 = "hambrger";
+// const food3 = "hotdog";
+// const food4 = "sushi";
+
+// openFridge(food1, food2, food3, food4, food5);
+
+
+
+
+// function rollDice(){
+
+//     const numofDice =document.getElementById("numOfDice").value;
+//     const diceResult =document.getElementById("diceResult");
+//     const diceImages =document.getElementById("diceImages");
+//     const values = [];
+//     const images = [];
+
+
+
+//     for(let i = 0; i < numofDice; i++){
+//         const value = Math.floor(Math.random() *  6) + 1;
+//         values.push(value);
+//         images.push(`<img src="dice_images"${value}.png" alt="Dice ${value}">`); 
+//     }
+
+//     diceResult.textContent=`dice: ${values.join(', ')}`;
+//     diceImages.innerHTML = images.join(` `);       
+
+
+
+ 
+// }
+
+
+
+
+
+function generatePassword(length,includeLowercase, includeUppercase ,includeNumbers,includesymbols ){
+    
 }
+
+    const LowerCaseChars = "abcdefghijklmnoprstuvwxyz";
+    const uppperCaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const numberChars = "0123456789";
+    const symbolChars = "!@#$%^&*()_+";
+
+    let allowedchars="";
+    let password="";
+
+
+    allowedchars += includeLowercase ? LowerCaseChars : "";
+    allowedchars += includeUppercase ? uppperCaseChars : "";
+    allowedchars += includeNumbers? numberChars : "";
+    allowedchars += includesymbols? symbolChars : "";
+
+   if(length <=0){
+    return`(password length must be atleast 1)`;
+   }
+   if(allowedchars.length === 0){
+    return `(Atleast 1 set of characters needs to be selected)`;
+   }
+   for(let i = 0; i < length; i++){
+       const randomIndex = Math.floor(Math.random() * allowedChars.length);
+       password += allowedchars[randomIndex];
+    }
+    
+    return password;
+
+
+
+const passwordLength = 12;
+const includeLowercase = true;
+const includeUppercase = true;
+const includeNumbers  = true;
+const includesymbols = true;
+
+const password = generatePassword(passwordLength,
+                                  includeLowercase,
+                                  includeUppercase,
+                                  includeNumbers,
+                                  includesymbols ); 
+
+console.log(`Generated paassword: ${password}`);    
+
+
+
+
+
+
 
 
 
