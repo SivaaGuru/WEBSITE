@@ -1,5 +1,7 @@
 //3-Digit Randomizer
 
+// const { isValidElement } = require("react");
+
 // const myButton = document.getElementById("myButton");
 // const Label1 = document.getElementById("Label1");
 // const Label2 = document.getElementById("Label2");
@@ -436,6 +438,102 @@
 //                                   includesymbols ); 
 
 // console.log(`Generated paassword: ${password}`);    
+
+
+//call back function
+
+// sum(displayPage, 1, 2);
+
+// function sum(callback, x, y){
+//     let result = x + y;
+//     callback(result);
+// }
+
+// function displayConsole(result){
+//     console.log(result);
+// }
+
+// function displayPage(result){
+//     document.getElementById("myH1").textContent = result;
+// }
+
+// for each() method
+
+// let friuts = ["appple", "orange" , "banana", "coconut"];
+
+
+// friuts.forEach(capitalize);
+// friuts.forEach(display);
+
+// function upperCase(element, index, array){
+//         array[index] = element.toUppercase();
+// }
+
+// function lowercase(element, index, array){
+//         array[index] = element.toLowercase();
+// }
+
+// function capitalize(element, index, array){
+//         array[index] = element.charAt(0).toUppercase() + element.slice(1);
+// }
+
+// function display(element){
+//     console.log(element);
+// }
+
+
+
+//map ()
+
+// const students = ["Spongebob","Patrick","Sqiudward"]
+// const studentsUpper = students.map(uppercase);
+
+// console.log(studentsUpper);
+
+// function upperCase(element){
+//     return element.toUppercase();
+// }
+
+
+
+//filter()
+
+// let numbers = [ 1,2,3,4,5,6,7];
+// let evenNums = numbers.filter(isEven);
+// let oddNums = numbers.filter(); 
+
+
+// console.log(oddNums);
+
+// function isEven(element){
+//     return element % 2 === 0;
+// }
+
+// function isOdd(element){
+//     return element % 2 !== 0; 
+// }  
+
+
+
+const words = ["apple","mango","banana","pineapple"];
+const shortwords = words.filter(getShortWords);
+const longwords = words.filter(getLongWords);
+
+console.log(longwords);
+
+function getShortWords(element){
+    return element.lenght <= 6;
+}
+
+function getLongWords(element){
+    return element.length > 6;
+}
+
+
+
+
+
+
 
 
 
