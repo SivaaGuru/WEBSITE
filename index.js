@@ -1,3 +1,5 @@
+//3-Digit Randomizer
+
 // const myButton = document.getElementById("myButton");
 // const Label1 = document.getElementById("Label1");
 // const Label2 = document.getElementById("Label2");
@@ -21,6 +23,7 @@
 
 
 
+// Nested If-Statement Logic
 
 // let age = 18;
 // let hasLicense = true;
@@ -38,6 +41,10 @@
 // else{
 //     console.log("You must be 16+ to have a license");
 // }
+
+
+//User Age Verification 
+
 
 
 // const myText = document.getElementById("myText");
@@ -65,6 +72,8 @@
 //             resultElement.textContent =`you must be 18+ to enetr the site`;
 //         }    
 //     }
+
+// Subscription and Payment Handler
 
 
 // const mycheckbox = document.getElementById("mycheckbox");
@@ -96,6 +105,9 @@
 //         paymentResult.textContent = `You must select a payment type`;
 //     }
 // }   
+
+
+//Advanced Conditional Logic: Ternary Operators & Switch Statements
 
 // let age = 12;
 // let message = age >=18 ? "youre an adult" : "youre a minor";
@@ -132,6 +144,7 @@
 
 
 
+//String Manipulation and Formatting
 
 // const fullname ="Sivaa Guru";
 // let firstname = fullname.slice(0, 3);
@@ -175,6 +188,7 @@
 // }
 
 
+//String Formatting and User Authentication Loops
 
 // let phonenumber = "123-456-7890";
 
@@ -214,6 +228,7 @@
 //     }
 //  }
 
+//Logic for a Number Guessing Game
 
 // const minNum = 50;
 // const maxNum = 100;
@@ -262,6 +277,7 @@
 
 
 
+//JavaScript Functions: Validation and Local Scope
 
 // function isValidEmail(email){
 
@@ -293,6 +309,7 @@
 // }
 
 
+//Temperature Conversion Logic
 
 // const textBox = document.getElementById("textBox");
 // const toFahrenheit = document.getElementById("toFahrenheit");
@@ -321,6 +338,7 @@
 // }
 
 
+//Arrays and the Rest Parameter
 
 // let fruits = ("apple","banana","coconut","orange");
 
@@ -341,6 +359,7 @@
 
 
 
+//Dynamic Dice Roller with Image Rendering
 
 // function rollDice(){
 
@@ -369,53 +388,54 @@
 
 
 
+// Random Password Generation Logic
 
-function generatePassword(length,includeLowercase, includeUppercase ,includeNumbers,includesymbols ){
+// function generatePassword(length,includeLowercase, includeUppercase ,includeNumbers,includesymbols ){
+
+// }
+
+//     const LowerCaseChars = "abcdefghijklmnoprstuvwxyz";
+//     const uppperCaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//     const numberChars = "0123456789";
+//     const symbolChars = "!@#$%^&*()_+";
+
+//     let allowedchars="";
+//     let password="";
+
+
+//     allowedchars += includeLowercase ? LowerCaseChars : "";
+//     allowedchars += includeUppercase ? uppperCaseChars : "";
+//     allowedchars += includeNumbers? numberChars : "";
+//     allowedchars += includesymbols? symbolChars : "";
+
+//    if(length <=0){
+//     return`(password length must be atleast 1)`;
+//    }
+//    if(allowedchars.length === 0){
+//     return `(Atleast 1 set of characters needs to be selected)`;
+//    }
+//    for(let i = 0; i < length; i++){
+//        const randomIndex = Math.floor(Math.random() * allowedChars.length);
+//        password += allowedchars[randomIndex];
+//     }
     
-}
-
-    const LowerCaseChars = "abcdefghijklmnoprstuvwxyz";
-    const uppperCaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const numberChars = "0123456789";
-    const symbolChars = "!@#$%^&*()_+";
-
-    let allowedchars="";
-    let password="";
-
-
-    allowedchars += includeLowercase ? LowerCaseChars : "";
-    allowedchars += includeUppercase ? uppperCaseChars : "";
-    allowedchars += includeNumbers? numberChars : "";
-    allowedchars += includesymbols? symbolChars : "";
-
-   if(length <=0){
-    return`(password length must be atleast 1)`;
-   }
-   if(allowedchars.length === 0){
-    return `(Atleast 1 set of characters needs to be selected)`;
-   }
-   for(let i = 0; i < length; i++){
-       const randomIndex = Math.floor(Math.random() * allowedChars.length);
-       password += allowedchars[randomIndex];
-    }
-    
-    return password;
+//     return password;
 
 
 
-const passwordLength = 12;
-const includeLowercase = true;
-const includeUppercase = true;
-const includeNumbers  = true;
-const includesymbols = true;
+// const passwordLength = 12;
+// const includeLowercase = true;
+// const includeUppercase = true;
+// const includeNumbers  = true;
+// const includesymbols = true;
 
-const password = generatePassword(passwordLength,
-                                  includeLowercase,
-                                  includeUppercase,
-                                  includeNumbers,
-                                  includesymbols ); 
+// const password = generatePassword(passwordLength,
+//                                   includeLowercase,
+//                                   includeUppercase,
+//                                   includeNumbers,
+//                                   includesymbols ); 
 
-console.log(`Generated paassword: ${password}`);    
+// console.log(`Generated paassword: ${password}`);    
 
 
 
