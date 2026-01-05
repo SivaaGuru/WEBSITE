@@ -514,23 +514,59 @@
 // }  
 
 
+//.reduce()
 
-const words = ["apple","mango","banana","pineapple"];
-const shortwords = words.filter(getShortWords);
-const longwords = words.filter(getLongWords);
+// const prices  = [5, 30, 10, 25, 15, 20];
 
-console.log(longwords);
+// const total = prices.reduce(sum);
 
-function getShortWords(element){
-    return element.lenght <= 6;
+// console.log(`$${total.toFixed(2)}`);
+
+// function sum(accumulator,element){
+//     return accumulator + element ;
+// }
+
+
+// function search(arr, x) {
+    
+//     for (let i = 0; i < arr.length; i++) {
+       
+//         if (arr[i] === x) {
+//             return i;
+//         }
+//     }
+
+   
+//     return -1;
+// }
+
+
+// const arr1 = [1, 2, 3, 4];
+// const x1 = 3;
+// console.log(search(arr1, x1)); // Output: 2
+
+// const arr2 = [10, 8, 30];
+// const x2 = 6;
+// console.log(search(arr2, x2)); // Output: -1
+
+
+
+function search(arr,x);
+for (let i=0; i < arr.length;i++);
+if arr([i] === x);
+            
+   
+    return -1;
 }
 
-function getLongWords(element){
-    return element.length > 6;
-}
 
+const arr1 = [1, 2, 3, 4];
+const x1 =1,3;
+console.log(search(arr1, x1)); // Output: 2
 
-
+const arr2 = [1, 2, 3, 4, 5];
+const x2 = 1, 3, 5;
+console.log(search(arr2, x2));
 
 
 
