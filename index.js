@@ -550,25 +550,92 @@
 // console.log(search(arr2, x2)); // Output: -1
 
 
+// function countZeroes(arr) {
+//     let count = 0;
+//     // Iterate from the end of the array backwards
+//     for (let i = arr.length - 1; i >= 0; i--) {
+//         if (arr[i] === 0) {
+//             count++;
+//         } else {
+//             // As soon as we hit a 1, we can stop because it's sorted
+//             break;
+//         }
+//     }
+//     return count;
+// }
 
-function search(arr,x);
-for (let i=0; i < arr.length;i++);
-if arr([i] === x);
-            
+
+//sample palindrome 
+
+// function isPalindrome(s) {
+//     let left = 0;
+//     let right = s.length - 1;
+
+//     while (left < right) {
+       
+//         if (s[left] !== s[right]) {
+//             return false; 
+//         }
+        
+      
+//         left++;
+//         right--;
+//     }
+
    
-    return -1;
+//     return true;
+// }
+
+// console.log(isPalindrome("abba")); 
+// console.log(isPalindrome("abc")); 
+
+
+
+//function expressions
+
+// const numbers= [1, 2, 3, 4, 5, 6];
+// const squares = numbers.map(function(element){
+//     return Math.pow(element, 2);
+// });
+// const cubes = numbers.map(function cube(element){
+//     return Math.pow(element, 3);
+// });
+
+// const evenNums = numbers.filter(function(element){
+//     return element % 2 === 0;
+// });
+// console.log(cubes)
+
+
+// const hello = (name) => {console.log(`Hello ${name}`)
+//                          console.log(`You are old`)};
+// hello("Bro");                        
+                         
+                        
+
+    
+
+
+
+
+const person1 ={
+    firstName: "Spongebob",
+    lastName: "Squarepant", 
+    age: 30,
+    isEmployed :true,
+    sayHello:function(){console.log("Hi! I am Spongebob!")},
 }
 
+const person2 ={
+    firstName: "Patrick",
+    lastName: "Star", 
+    age: 30,
+    isEmployed :false,
+    sayHello:function(){console.log("Hi! I am patrick!")},
+}
 
-const arr1 = [1, 2, 3, 4];
-const x1 =1,3;
-console.log(search(arr1, x1)); // Output: 2
-
-const arr2 = [1, 2, 3, 4, 5];
-const x2 = 1, 3, 5;
-console.log(search(arr2, x2));
-
-
+person1.sayHello();
+person2.sayHello()
 
 
 
