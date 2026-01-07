@@ -1,27 +1,8 @@
 //3-Digit Randomizer
 
-// const { isValidElement } = require("react");
-
-// const myButton = document.getElementById("myButton");
-// const Label1 = document.getElementById("Label1");
-// const Label2 = document.getElementById("Label2");
-// const Label3 = document.getElementById("Label3");
-// const min = 1;
-// const max = 6;
-// let randomNum1;
-// let randomNum2;
-// let randomNum3;
 
 
-// myButton.onclick = function(){
-//     randomNum1 = Math.floor(Math.random() * max) + min;
-//     randomNum2 = Math.floor(Math.random() * max) + min;
-//     randomNum3 = Math.floor(Math.random() * max) + min;
-//     myLabel1.textContent = randomNum1;
-//     myLabel2.textContent = randomNum2;
-//     myLabel3.textContent = randomNum3;
 
-// }
 
 
 
@@ -617,36 +598,129 @@
 
 
 
+//Javascript objects
+// const person1 ={
+//     firstName: "Spongebob",
+//     lastName: "Squarepant", 
+//     age: 30,
+//     isEmployed :true,
+//     sayHello:function(){console.log("Hi! I am Spongebob!")},
+//     eat:function(){console.log("i am eating krabby patty.")},
+// }
 
-const person1 ={
-    firstName: "Spongebob",
-    lastName: "Squarepant", 
-    age: 30,
-    isEmployed :true,
-    sayHello:function(){console.log("Hi! I am Spongebob!")},
+// const person2 ={
+//     firstName: "Patrick",
+//     lastName: "Star", 
+//     age: 30,
+//     isEmployed :false,
+//     sayHello:function(){console.log("Hi! I am patrick!")},
+//     eat:function(){console.log("i am eating beef .")},
+// }
+
+// person1.sayHello();
+// person2.sayHello();
+
+
+
+//class
+
+
+// class product{
+//     constuctor(name,price){
+//         this.name = name;
+//         this.price = price;
+//     }
+
+//     displayproduct(){
+//         console.log(`Product: ${this.name}`);
+//         console.log(`Price: $${this.price.toFixed(2)}`);
+//     }
+
+//     calculateTotal(salesTax){
+//         return this.price + (this.price * salesTax);
+//     }
+
+// }
+
+// const salesTax = 0.05;
+
+
+// const product1 = new Product("shirt ",19.99);
+// const product2 = new Product("pant",20.00);
+// const product3 = new Product("undies",100.00);
+
+// product1.displayproduct();
+
+// const total = product1.calculateTotal(salesTax);  
+// console.log(`Total price (with tax):$${total.toFixed(2)}`); 
+
+
+
+
+//check even or odd
+
+
+// function isEven(n){
+
+//     let rem =n % 2;
+//     if(rem == 0){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+
+
+// let n = 15;
+// if(isEven(n)){
+//     console.log("true");
+// }
+// else{
+//     console.log("false");
+// }
+
+
+// function isEven(n)
+// {
+//      if((n & 1) === 0){
+//         return true;
+//      }
+//      else{
+//         return false;
+//      }
+//     }
+
+// let n = 15;
+// if(isEven(n)){
+//     console.log("true");
+// }
+// else{
+//     console.log("false");
+// }
+
+
+// multiplication table
+
+// function printTable(n) {
+// for (let i = 1; i <= 10; ++i)
+//         console.log(n + " * " +i + " = " + n * i );
+// }
+
+// let n = 5;
+// printTable(n);
+
+
+function printTable(n, i = 1){
+    if (i == 11)
+        return;
+     console.log(n + " * " +i + " = " + n * i );
+     i++;
+     printTable(n,i);
 }
 
-const person2 ={
-    firstName: "Patrick",
-    lastName: "Star", 
-    age: 30,
-    isEmployed :false,
-    sayHello:function(){console.log("Hi! I am patrick!")},
-}
-
-person1.sayHello();
-person2.sayHello()
-
-
-
-
-
-
-
-
-
-
-
+let n = 5;
+printTable(n);
 
 
 
