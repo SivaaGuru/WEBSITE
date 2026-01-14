@@ -711,16 +711,115 @@
 // printTable(n);
 
 
-function printTable(n, i = 1){
-    if (i == 11)
-        return;
-     console.log(n + " * " +i + " = " + n * i );
-     i++;
-     printTable(n,i);
-}
+// function printTable(n, i = 1){
+//     if (i == 11)
+//         return;
+//      console.log(n + " * " +i + " = " + n * i );
+//      i++;
+//      printTable(n,i);
+// }
 
-let n = 5;
-printTable(n);
+// let n = 5;
+// printTable(n);
+
+
+
+
+//Find Closest to n and Divisible by m
+// function closestNumber(n, m) {
+
+// let q = parseInt(n / m);
+
+// let n1 = m * q;
+
+// let n2 = (n * m) > 0 ?
+//     (m * (q + 1)) : (m * (q - 1));
+
+// if (Math.abs(n - n1) < Math.abs(n - n2))
+//     return n1;
+
+// return n2;
+// }
+// let n = 13;
+// let m = 4;
+// console.log(closestNumber(n, m));
+
+//nth term in ap
+
+// function nthTermOfAp(a1, a2, n)
+// {
+//     let nthTerm = a1;
+//     let d = a2 - a1;
+//     for (let i = 1;i < n;i++) {
+//         nthTerm += d;
+//     }
+//     return nthTerm;
+// }
+
+// let a1 = 2,a2 = 3;
+// let n = 4;
+// console.log(nthTermOfAp(a1, a2, n))
+
+
+//Sum of Digits of a Number
+
+// function sumOfDigits(n) {
+//     let sum = 0;
+//     while (n !== 0) {
+//         let last = n % 10;
+
+//         sum += last;
+
+//         n = Math.floor(n / 10);
+//     }
+//     return sum;
+// }
+
+// let n =12345;
+// console.log(sumOfDigits(n));
+
+
+
+//Reversing Digit by Digit
+
+// let num = 4562;
+
+//     function reverseDigits(n){
+//         let revNum = 0;
+//         while(n > 0)
+//         {
+//             revNum = revNum * 10 + n % 10;
+//             n = Math.floor(n / 10);
+//         }
+//         return revNum;
+//     }
+//     console.log(reverseDigits(num));
+
+
+//School Method
+
+function isPrime(n) 
+{ 
+    // Corner case 
+    if (n <= 1) return false; 
+
+    // Check from 2 to n-1 
+    for (let i = 2; i < n; i++) 
+        if (n % i == 0) 
+            return false; 
+    return true; 
+} 
+
+// Driver Program to test above function 
+    isPrime(11)? document.write(" true" + "<br>"): document.write(" false" + "<br>"); 
+    isPrime(15)? document.write(" true" + "<br>"): document.write(" false" + "<br>"); 
+
+
+
+
+
+
+
 
 
 
