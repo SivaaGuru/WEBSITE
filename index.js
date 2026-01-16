@@ -798,21 +798,91 @@
 
 //School Method
 
-function isPrime(n) 
-{ 
-    // Corner case 
-    if (n <= 1) return false; 
+// function isPrime(n) 
+// { 
+   
+//     if (n <= 1) return false; 
 
-    // Check from 2 to n-1 
-    for (let i = 2; i < n; i++) 
-        if (n % i == 0) 
-            return false; 
-    return true; 
-} 
+   
+//     for (let i = 2; i < n; i++) 
+//         if (n % i == 0) 
+//             return false; 
+//     return true; 
+// } 
 
-// Driver Program to test above function 
-    isPrime(11)? document.write(" true" + "<br>"): document.write(" false" + "<br>"); 
-    isPrime(15)? document.write(" true" + "<br>"): document.write(" false" + "<br>"); 
+
+//     isPrime(11)? document.write(" true" + "<br>"): document.write(" false" + "<br>"); 
+//     isPrime(15)? document.write(" true" + "<br>"): document.write(" false" + "<br>"); 
+
+
+//nested objects
+
+// class Person{
+
+//     constructor(name, age, ...address){
+//         this.name = name;
+//         this.age = age;
+//         this.address = new Address(...address);
+//     }
+
+// }
+// class Address{
+
+//     constructor(street, city, country){
+//         this.street = street;
+//         this.city = city;
+//         this.country  = country;
+//     }
+// } 
+
+
+// const person1 = new Person("Spongebob", 30, "120 moggappair",
+//                                            "chennai",
+//                                             "india");
+// const person2 = new Person("patrick", 30, "124 moggappair",
+//                                             "chennai",
+//                                              "india");    
+
+
+// console.log(person1.address);
+
+
+
+//array of objetcts
+// const fruits = [{name:"apple", color:"red", calories:95},
+//                 {name:"mango",color:"yellow",calories:85},
+//                 {name:"mango",color:"yellow",calories:85}]
+
+
+// const fruitNames = fruits.map(fruit => fruit.name);
+// const fruitColors = fruits.map(fruit => fruit.color);
+// const fruitCalories = fruits.map(fruit => fruit.calories);
+
+
+
+
+// console.log(fruitNames);
+// console.log(fruitColors);
+    
+
+
+//sort method
+const people = [{name:"Spongebob",age: 30,gpa: 3.0},
+                {name:"Patrick",age: 37,gpa: 1.5},
+                {name:"Squidward",age: 51,gpa: 2.5},
+                {name:"sandy",age:27,gpa:4.00}]
+
+people.sort((a,b) => a.age - b.age);
+
+console.log(people);
+
+
+
+
+
+
+
+
 
 
 
