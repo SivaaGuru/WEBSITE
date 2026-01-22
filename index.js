@@ -1011,21 +1011,29 @@
 // } 
 
 
-function isPower(x,y){
+// function isPower(x,y){
 
-    if (x === 1)
-        return  y === 1;
-    let pow = 1;
-    while (pow  < y)
-        pow *= x;
+//     if (x === 1)
+//         return  y === 1;
+//     let pow = 1;
+//     while (pow  < y)
+//         pow *= x;
     
-    return pow === y;
-}
+//     return pow === y;
+// }
 
-console.log(isPower(10,1));
-console.log(isPower(1,20));
-console.log(isPower(2,128));
-console.log(isPower(2,30));
+// console.log(isPower(10,1));
+// console.log(isPower(1,20));
+// console.log(isPower(2,128));
+// console.log(isPower(2,30));
+
+
+
+
+
+
+
+
 
 
 

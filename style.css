@@ -50,7 +50,7 @@ body{
 } */
 
 
-body{
+/* body{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,4 +108,5 @@ body{
 #resetBtn:hover{
     background-color: hsl(255, 100%, 50%);
 }  
-    
+     */
+
