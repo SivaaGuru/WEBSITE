@@ -1028,30 +1028,89 @@
 // console.log(isPower(2,30));
 
 //calculator program
- const display = document.getElementById("display");
+//  const display = document.getElementById("display");
  
- function appendToDisplay(input){
-    display.value += input;
+//  function appendToDisplay(input){
+//     display.value += input;
 
 
- }
+//  }
 
-function clearDisplay(){
-    display.value = "";
+// function clearDisplay(){
+//     display.value = "";
 
-} 
+// } 
 
-function calculate(){
-    try{
-            display.value = eval(display.value);
+// function calculate(){
+//     try{
+//             display.value = eval(display.value);
 
-    }
-    catch(error){
-        display.value = "Error";
+//     }
+//     catch(error){
+//         display.value = "Error";
 
-    }
+//     }
 
-} 
+// } 
+
+
+//DOM NAVIGATION
+
+// const element = document.getElementById("fruits");
+// const firstchild = element.firstElementChild;
+// firstchild.style.backgroundColor = "yellow";
+
+
+// const u1Elements = document.querySelectorAll("u1");
+
+// u1Elements.forEach(u1Elements => {
+//     const lastChild = u1Element.lastElementChild;
+//     lastChild.style.backgroundColor = "yellow";
+// });
+
+// const element = document.getElementsById("apple");
+// const nextSibling = element.nextElemenetSibiling;
+// nextSibling.style.backgroundColor = "yellow";
+
+// add and change html.
+
+// const newH1 = document.createElement("h1");
+
+// newH1.textContent = "I like pizza!";
+// newH1.id = "myH1";
+// newH1.style.color = "tomato";
+// newH1.style.textAlign = "center";
+
+// // const box2 = document.getElementById("box2");
+// // document.body.insertBefore(newH1,box2);
+
+
+// const boxes = document.querySelector(".box");
+// document.body.insertBefore(newH1,boxes[4]);
+
+
+const myBox  = document.getElementById("myBox");
+const myButton = document.getElementById("myButton");
+
+myButton.addEventListener("click",event => {
+    myBox.style.backgroundColor = "tomato";
+    myBox.textContent = "OUCH!  😫";
+});
+
+myButton.addEventListener("mouseover",event => {
+    myBoxstyle.backgroundColor = "yellow";
+    myBox.target.textContent = "dont ddo it ! 😫";
+});
+
+myButton.addEventListener("mouseout", event => {
+     myBox.style.backgroundColor = "lightgreen";
+   myBox.textContent = " Click me 😊";
+
+});
+
+
+
+
 
 
 
