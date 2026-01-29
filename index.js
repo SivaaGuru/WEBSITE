@@ -1157,7 +1157,6 @@
 
 //class list
 
-let buttons = debugger
 
 
 
