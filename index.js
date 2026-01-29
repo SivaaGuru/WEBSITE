@@ -1088,25 +1088,101 @@
 // const boxes = document.querySelector(".box");
 // document.body.insertBefore(newH1,boxes[4]);
 
+//mouse events
+// const myBox  = document.getElementById("myBox");
+// const myButton = document.getElementById("myButton");
 
-const myBox  = document.getElementById("myBox");
-const myButton = document.getElementById("myButton");
+// myButton.addEventListener("click",event => {
+//     myBox.style.backgroundColor = "tomato";
+//     myBox.textContent = "OUCH!  😫";
+// });
 
-myButton.addEventListener("click",event => {
-    myBox.style.backgroundColor = "tomato";
-    myBox.textContent = "OUCH!  😫";
-});
+// myButton.addEventListener("mouseover",event => {
+//     myBoxstyle.backgroundColor = "yellow";
+//     myBox.target.textContent = "dont ddo it ! 😫";
+// });
 
-myButton.addEventListener("mouseover",event => {
-    myBoxstyle.backgroundColor = "yellow";
-    myBox.target.textContent = "dont ddo it ! 😫";
-});
+// myButton.addEventListener("mouseout", event => {
+//      myBox.style.backgroundColor = "lightgreen";
+//    myBox.textContent = " Click me 😊";
 
-myButton.addEventListener("mouseout", event => {
-     myBox.style.backgroundColor = "lightgreen";
-   myBox.textContent = " Click me 😊";
+// });
 
-});
+
+//key events
+
+// document.addEventListener("keydown", event => {
+//     console.log(`Key down = ${event.key}`);
+// });
+
+// document.addEventListener("keyup", event => {
+//     console.log(`Key up = ${event.key}`);
+// });
+
+
+//hide|show HTML
+
+// const myButton = document.getElementById("myButton");
+// const myImg = document.getElementById("myImg");
+
+// myButton.addEventListener("click", event =>{
+
+//     if(myImg.style.visibility === "hidden"){
+//         myImg.style.visibility = "visible";  
+//         myButton.textContent= "hide";
+//     }
+//     else{
+
+//          myImg.style.visibility= "hidden";
+//          myButton.textContent= "show";
+//     }
+// });
+
+//NodeList
+// let buttons = document.querySelectorAll(".myButtons");
+
+// buttons.forEach(button =>{
+//     button.style.backgroundColor = "green";
+//     button.textContent += "😊";
+
+// });
+
+// let buttons = document.querySelectorAll(".myButtons");
+
+// butttons.forEach(button => {
+//     button.addEventListener("click", event => {
+//         event.target.style.background = "tomato";
+//     });
+// });
+
+//class list
+
+let buttons = debugger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
