@@ -30,10 +30,3 @@ function isEven(n)
      }
     }
 
-let n = 15;
-if(isEven(n)){
-    console.log("true");
-}
-else{
-    console.log("false");
-}

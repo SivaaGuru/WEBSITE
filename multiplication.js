@@ -15,6 +15,4 @@ function printTable(n, i = 1){
      printTable(n,i);
 }
 
-let n = 5;
-printTable(n);
 
