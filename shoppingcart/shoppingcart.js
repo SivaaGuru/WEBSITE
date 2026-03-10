@@ -79,5 +79,3 @@ let update = (id) => {
     let search = basket.find((x)=>x.id === id);
     console.log(search.item);
 };
-
-
