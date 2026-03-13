@@ -88,7 +88,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+   
    
 }
 
@@ -105,4 +105,21 @@ a{
 
 .bi-plus-lg{
     color: green;
+}
+
+/**
+*! style rules for label and some buttons
+**/
+
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.HomeBtn{
+    background-color:#212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
 }

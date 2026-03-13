@@ -11,21 +11,18 @@ let calculation =()=>{
 calculation();
 
 let generateCartItems = ()=>{
-   if(basket.length !==0){
+   if(basket.length !== 0){
     
-   }else{
-   shoppingcart.innerHTML= ``
-   label.innerHTML=`
-   <h2>Cart is Empty</h2>
-   <a href="index">
-   <button ="Homebtn">Back to home</button>
-   </a>
-
-   `;
-   
+   }else {
+    shoppingcart.innerHTML =``
+    label.innerHTML = `
+    <h2>Cart is Empty</h2>
+    <a href="index.html">
+      <button class="HomeBtn">Back to home</button>
+      </a>     
+    `;
    }
 };
-
  generateCartItems();
 
 

@@ -55,14 +55,14 @@ let increment = (id) => {
 let decrement = (id) => {
    
    let selectedItem = id;
-    let search = basket.find((x)=> x.id ===selectedItem.id); 
+    let search = basket.find((x)=> x.id ===selectedItem.id);
     
     if(search === undefined) return
     else if(search.item === 0) return;
         else{
         search.item -= 1;
     }
-    
+
     basket = basket.filter((x)=>x.item !== 0);
      //console.log(basket);
      update(selectedItem.id);
